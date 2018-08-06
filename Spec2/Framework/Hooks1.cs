@@ -113,7 +113,7 @@ namespace Spec2.Properties
                 }
             Console.WriteLine("quithem");
         
-         //   Driver.Quit();
+            Driver.Quit();
             Console.WriteLine("quit after");
 
         }

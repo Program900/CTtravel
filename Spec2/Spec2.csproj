@@ -148,9 +148,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StepDefination\ChooseYourHolidaySteps.cs" />
+    <Compile Include="Features\ChooseYourHoliday.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChooseYourHoliday.feature</DependentUpon>
+    </Compile>
     <Compile Include="StepDefination\ChooseyourDestinationSteps.cs" />
     <Compile Include="StepDefination\BaseSteps.cs" />
-    <Compile Include="StepDefination\ChooseAHolidayCollectionSteps.cs" />
     <Compile Include="Data\SettingsData.cs" />
     <Compile Include="Data\TestData.cs" />
     <Compile Include="Data\UserData.cs" />
@@ -160,7 +165,6 @@
       <DependentUpon>ChooseyourDestination.feature</DependentUpon>
     </Compile>
     <Compile Include="Framework\Prop.cs" />
-    <Compile Include="LoginSteps.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\BlogPage.cs" />
     <Compile Include="Pages\ContactUsPage.cs" />
@@ -170,11 +174,7 @@
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Propertie\AssemblyInfo.cs" />
-    <Compile Include="EmployeeDetails.cs" />
-    <Compile Include="ExtendedSteps.cs" />
     <Compile Include="Framework\Hooks1.cs" />
-    <Compile Include="StepDefination\LoginStepDefination.cs" />
-    <Compile Include="StepDefination\StepDefinition1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -182,6 +182,10 @@
     <None Include="Features\ChooseyourDestination.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ChooseyourDestination.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ChooseYourHoliday.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ChooseYourHoliday.feature.cs</LastGenOutput>
     </None>
     <None Include="license" />
     <None Include="packages.config" />

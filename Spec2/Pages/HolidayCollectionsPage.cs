@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,17 +29,18 @@ namespace Spec2.Pages
             return pageTitle;
         }
 
-        public  void ClickHolidayCollection()
+        public void ClickHolidayCollection()
         {
-            IWebElement HolidayCollections = driver.FindElement(By.XPath(@"//*[@id='content']/div[2]/div[3]/div[1]/div/div/button[2]"));
+            IWebElement HolidayCollections = driver.FindElement(By.XPath(@"//*[@id='content']/div[2]/div[3]/div[1]/div/div/button[2]/em"));
+            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", HolidayCollections);
             HolidayCollections.Click();
             Wait();
         }
 
-        public  bool IsChooseAHolidayCollection()
+        public bool IsChooseAHolidayCollection()
         {
-            if(IsElementPresent(By.XPath(@"//*[@id='content']/div[2]/div[3]/div[1]/div/div/button[2]")))
-                {
+            if (IsElementPresent(By.XPath(@"//*[@id='content']/div[2]/div[3]/div[1]/div/div/button[2]")))
+            {
                 return true;
             }
             else
@@ -45,7 +48,7 @@ namespace Spec2.Pages
                 return false;
             }
 
-            
+
 
 
         }
@@ -55,17 +58,18 @@ namespace Spec2.Pages
             IList<IWebElement> HoiC = driver.FindElements(By.XPath(@"//*[@id='homepage-dropdown-menu']/li"));
             Console.WriteLine(HoiC.Count);
 
-            
+
             for (int i = 1; i < HoiC.Count; i++)
             {
 
-                String s = "//*[@id='homepage-dropdown-menu']/li["+i+"]/a";
-                By Collec = By.XPath(s);
-                
-                WaitForElement(Collec);
+                String s = "//*[@id='homepage-dropdown-menu']/li[" + i + "]/a";
+
+                By loc = By.XPath(s);
+                //  WaitForElement(loc);
                 IWebElement TitleOfHolidayCollection = driver.FindElement(By.XPath(s));
                 var Holiday = TitleOfHolidayCollection.Text;
-                
+                Wait();
+
                 Console.WriteLine(Holiday);
 
             }
@@ -81,6 +85,7 @@ namespace Spec2.Pages
 
         public static void ClickCollections(string p0)
         {
+            Console.WriteLine(p0);
             IList<IWebElement> HoiC = driver.FindElements(By.XPath(@"//*[@id='homepage-dropdown-menu']/li"));
             Console.WriteLine(HoiC.Count);
 
@@ -88,29 +93,55 @@ namespace Spec2.Pages
             for (int i = 1; i < HoiC.Count; i++)
             {
 
-                String s = "//*[@id='homepage-dropdown-menu']/li["+i+"]/a";
-                By Collec = By.XPath(s);
+                String p = "//*[@id='homepage-dropdown-menu']/li[" + i + "]/a";
 
-               // WaitForElement(Collec);
-                IWebElement TitleOfHolidayCollection = driver.FindElement(By.XPath(s));
-                var Holiday = TitleOfHolidayCollection.Text;
-                if (Holiday == p0)
+
+
+                IWebElement TitleOfTheDestination1 = driver.FindElement(By.XPath(p));
+                var city1 = TitleOfTheDestination1.Text;
+                Console.WriteLine("*****************************");
+                WaitforElement();
+
+                Console.WriteLine(city1);
+                if (p0.Equals(city1))
                 {
-                    TitleOfHolidayCollection.Click();
+                    TitleOfTheDestination1.Click();
+                    Console.WriteLine("*****************************");
+                    WaitforElement();
+                    Console.WriteLine("**********************");
+                    Console.WriteLine(driver.Title);
+
+
+
+
+
                     break;
-                    
 
                 }
-               // Wait();
 
-                Console.WriteLine(Holiday);
-                Console.WriteLine(driver.Title);
+
+
+
             }
+
+
+
+
+
         }
 
-        public void Sp(string p0)
+        private static WebDriverWait WaitforElement()
         {
-            throw new NotImplementedException();
+            return new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+        }
+
+        public static void TitleContains(string p0)
+        {
+            String St = driver.Title;
+            Console.WriteLine(driver.Title);
+
+
+
         }
     }
 }

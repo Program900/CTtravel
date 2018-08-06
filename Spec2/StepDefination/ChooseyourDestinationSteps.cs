@@ -43,7 +43,7 @@ namespace Spec2
         }
 
         [Given(@"I have  ChooseyourDestination")]
-        public void GivenIHaveChooseaHolidayCollection()
+        public void GivenIHaveChooseyourDestination()
         {
             Console.WriteLine("Given");
             bool b = homePage.IsChooseyourDestination();
@@ -84,5 +84,7 @@ namespace Spec2
            bool selected= homePage.IsSelectedDestination();
             Assert.IsTrue(selected);
         }
+
+       
     }
 }
