@@ -18,13 +18,7 @@ namespace Spec2.StepDefination
             var userData = Prop.GetUserType(userType);
             return userData;
         }
-       
-
-
-
-
-
-       
+  
 
 
     }

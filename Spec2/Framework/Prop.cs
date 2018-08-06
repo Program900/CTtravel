@@ -54,4 +54,3 @@ namespace Spec2.Framework
 
     }
 }
-

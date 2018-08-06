@@ -48,9 +48,6 @@ namespace Spec2.Pages
                 return false;
             }
 
-
-
-
         }
 
         public void OptionsOfHolidayCollections()
@@ -111,22 +108,11 @@ namespace Spec2.Pages
                     Console.WriteLine("**********************");
                     Console.WriteLine(driver.Title);
 
-
-
-
-
                     break;
 
                 }
 
-
-
-
             }
-
-
-
-
 
         }
 
@@ -139,8 +125,6 @@ namespace Spec2.Pages
         {
             String St = driver.Title;
             Console.WriteLine(driver.Title);
-
-
 
         }
     }

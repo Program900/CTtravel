@@ -13,6 +13,7 @@ using System.IO;
 
 using System.Text;
 using TechTalk.SpecFlow.Tracing;
+using System.Reflection;
 
 namespace Spec2.Properties
 {
@@ -23,11 +24,10 @@ namespace Spec2.Properties
         private static ExtentTest scenario;
         private static ExtentReports extent;
         public  static IWebDriver Driver;
+        public static ExtentTest test;
+
         static string Browser = Prop.Settings("browser").Value;
         static string baseurl = Prop.Settings("baseUrl").Value;
-
-
-
 
         // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
 
@@ -39,15 +39,16 @@ namespace Spec2.Properties
             htmlReporter.Configuration().Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
             extent = new ExtentReports();
             extent.AttachReporter(htmlReporter);
-        }
+
+
+          }
         [AfterTestRun]
         public static void TearDown()
         {
             extent.Flush();
 
         }
-
-
+        
         [BeforeFeature]
         public static void BeforeFeature()
         {
@@ -58,8 +59,24 @@ namespace Spec2.Properties
         [AfterStep]
         public void InsertReportingSteps()
         {
-            scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+
+            var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
+
+
+            Console.WriteLine(stepType);
+          
+            
+                if (stepType.Equals("Given"))
+                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (stepType.Equals("When"))
+                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (stepType.Equals("Then"))
+                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (stepType.Equals("And"))
+                    scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+                     
         }
+
         [BeforeScenario]
         public void BeforeScenario()
         {
@@ -72,30 +89,22 @@ namespace Spec2.Properties
                 Driver = new FirefoxDriver();
                 ScenarioContext.Current["driver"] = Driver;
 
-
-
             }
 
             else if (Browser == "Chrome")
             {
                 Console.Write("####### Feature : " + ScenarioContext.Current.ScenarioInfo.Title);
 
-
                 Driver = new ChromeDriver();
                 ScenarioContext.Current["driver"] = Driver;
-
-
 
             }
             else if (Browser == "IE")
             {
                 Console.Write("####### Feature : " + ScenarioContext.Current.ScenarioInfo.Title);
 
-
                 Driver = new InternetExplorerDriver();
                 ScenarioContext.Current["driver"] = Driver;
-
-
 
             }
             scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
@@ -117,8 +126,6 @@ namespace Spec2.Properties
             Console.WriteLine("quit after");
 
         }
-
-    
 
         private void TakeScreenshot(IWebDriver driver)
         {
@@ -158,9 +165,3 @@ namespace Spec2.Properties
     }
 }
     
-
-
-
-
-
-

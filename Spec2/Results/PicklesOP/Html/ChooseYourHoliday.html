@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>ChooseYourHoliday</title>
+    <link rel="stylesheet" href="css/master.css" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+  initializeToc();
+});
+</script>
+    <!-- We are using Font Awesome - http://fortawesome.github.com/Font-Awesome - licensed under CC BY 3.0 -->
+  </head>
+  <body>
+    <div id="container">
+      <div id="top" />
+      <div id="toc">
+        <p class="tocCollapser" title="Collapse Table of Content">«</p>
+        <ul class="features">
+          <li class="file" id="root">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="file">
+            <a href="ChooseDestination.html">ChooseDestination</a>
+            <span class="float-right">
+              <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+            </span>
+          </li>
+          <li class="file">
+            <span class="current">ChooseYourHoliday</span>
+            <span class="float-right">
+              <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div id="feature">
+        <div class="float-right">
+          <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+        </div>
+        <h1>ChooseYourHoliday</h1>
+        <div class="description">
+          <p>In order to Travel in Holidays
+As a Leisure Travel user
+I want to choose a Holiday Collection</p>
+        </div>
+        <ul id="scenarios">
+          <li class="scenario">
+            <div class="float-right">
+              <i class="icon-warning-sign inconclusive" title="Inconclusive with CTTravel version 1.0"> </i>
+            </div>
+            <div class="scenario-heading">
+              <h2>HolidayCollections</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on HomePage</li>
+                <li class="step">
+                  <span class="keyword">And </span>I open HolidayCollections</li>
+              </ul>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="float-right">
+              <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+            </div>
+            <div class="scenario-heading" id="select-holiday-collection">
+              <p class="tags">Tags: <span>@mytag</span></p>
+              <h2>select  Holiday Collection</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on HolidayCollections</li>
+                <li class="step">
+                  <span class="keyword">And </span>I have ChooseAHolidayCollection</li>
+                <li class="step">
+                  <span class="keyword">When </span>I click on ChooseHolidayCollection</li>
+                <li class="step">
+                  <span class="keyword">And </span>I click on '&lt;Holiday&gt;'</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('select-holiday-collection')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>Holiday</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Family Holidays</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Honeymoon Holidays</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Opera Holidays</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Rail Holidays</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ranch Holidays</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>River Cruises</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Route 66</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Self Drive Holidays</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Short Breaks</td>
+                        <td>
+                          <div class="float-right">
+                            <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="float-right">
+              <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+            </div>
+            <div class="scenario-heading" id="count-holiday-collection">
+              <h2>Count Holiday Collection</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on HolidayCollections</li>
+                <li class="step">
+                  <span class="keyword">And </span>I have ChooseAHolidayCollection</li>
+                <li class="step">
+                  <span class="keyword">When </span>I click on ChooseHolidayCollection</li>
+                <li class="step">
+                  <span class="keyword">Then </span>I should see '10' HolidayCollection</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('count-holiday-collection')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="float-right">
+              <i class="icon-ok passed" title="Successful with CTTravel version 1.0"> </i>
+            </div>
+            <div class="scenario-heading" id="options-of-holiday-collection">
+              <h2>Options of Holiday Collection</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on HolidayCollections</li>
+                <li class="step">
+                  <span class="keyword">And </span>I have ChooseAHolidayCollection</li>
+                <li class="step">
+                  <span class="keyword">When </span>I click on ChooseHolidayCollection</li>
+                <li class="step">
+                  <span class="keyword">Then </span>I should see OptionsofHolidayCollection</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('options-of-holiday-collection')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <p>Test results generated for: CTTravel, version 1.0</p>
+        <p>Generated on: 6 August 2018 18:49:06</p>
+        <p>Produced by Pickles, version 2.19.0.0</p>
+      </div>
+    </div>
+  </body>
+</html>

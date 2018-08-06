@@ -15,8 +15,6 @@ namespace Spec2
         TestData testData;
         HolidayCollectionsPage holidayCollectionsPage;
 
-
-
         ChooseYourHolidaySteps(HomePage homePage, BasePage basePage, TestData testData, HolidayCollectionsPage holidayCollectionsPage)
         {
             this.homePage = homePage;

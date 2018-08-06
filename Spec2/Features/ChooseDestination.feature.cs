@@ -18,20 +18,20 @@ namespace Spec2.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("ChooseyourDestination")]
-    public partial class ChooseyourDestinationFeature
+    [NUnit.Framework.DescriptionAttribute("ChooseDestination")]
+    public partial class ChooseDestinationFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "ChooseyourDestination.feature"
+#line 1 "ChooseDestination.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ChooseyourDestination", "\tIn order to search for a Destination\r\n\tAs a Leisure Travel\r\n\tI want to Choose De" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ChooseDestination", "\tIn order to search for a Destination\r\n\tAs a Leisure Travel\r\n\tI want to Choose De" +
                     "stination", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -91,7 +91,7 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Options  Destination", ((string[])(null)));
 #line 13
- this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 14
  testRunner.Given("I am on HomePage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
@@ -110,7 +110,7 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Choose Destination", ((string[])(null)));
 #line 19
- this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 20
  testRunner.Given("I am on HomePage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 21

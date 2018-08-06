@@ -28,9 +28,8 @@ namespace Spec2.Pages
 
         public void openURL()
         {
-           
+        
             
-
             driver.Navigate().GoToUrl(baseUrl);
             
         }
