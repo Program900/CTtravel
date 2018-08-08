@@ -118,7 +118,7 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("select  Holiday Collection")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("regression")]
         [NUnit.Framework.TestCaseAttribute("Family Holidays", null)]
         [NUnit.Framework.TestCaseAttribute("Honeymoon Holidays", null)]
         [NUnit.Framework.TestCaseAttribute("Opera Holidays", null)]
@@ -131,7 +131,7 @@ this.FeatureBackground();
         public virtual void SelectHolidayCollection(string holiday, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "regression"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

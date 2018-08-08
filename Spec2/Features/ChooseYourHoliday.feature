@@ -8,7 +8,7 @@ Background: HolidayCollections
 	Given I am on HomePage
 	And I open HolidayCollections
 	
-@mytag
+@regression
 Scenario Outline: select  Holiday Collection
     Given I am on HolidayCollections 
 	And I have ChooseAHolidayCollection

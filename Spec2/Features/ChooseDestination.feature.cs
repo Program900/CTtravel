@@ -66,11 +66,11 @@ namespace Spec2.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Count Destination")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("sanity")]
         public virtual void CountDestination()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Count Destination", new string[] {
-                        "mytag"});
+                        "sanity"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
@@ -80,7 +80,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 10
  testRunner.When("I click on ChooseyourDestination", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
- testRunner.Then("I should see \'38\' Destination", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see \'39\' Destination", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

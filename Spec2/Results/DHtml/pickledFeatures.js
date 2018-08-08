@@ -7,6 +7,48 @@ jsonPWrapper ({
         "Description": "In order to search for a Destination\r\nAs a Leisure Travel\r\nI want to Choose Destination",
         "FeatureElements": [
           {
+            "Name": "Count Destination",
+            "Slug": "count-destination",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "I am on HomePage",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "I have  ChooseyourDestination",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "I click on ChooseyourDestination",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "I should see '39' Destination",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              }
+            ],
+            "Tags": [
+              "@sanity"
+            ],
+            "Result": {
+              "WasExecuted": true,
+              "WasSuccessful": true
+            }
+          },
+          {
             "Name": "Options  Destination",
             "Slug": "options-destination",
             "Description": "",
@@ -351,6 +393,13 @@ jsonPWrapper ({
   "Summary": {
     "Tags": [
       {
+        "Tag": "@sanity",
+        "Total": 1,
+        "Passing": 1,
+        "Failing": 0,
+        "Inconclusive": 0
+      },
+      {
         "Tag": "@regression",
         "Total": 1,
         "Passing": 1,
@@ -361,8 +410,8 @@ jsonPWrapper ({
     "Folders": [
       {
         "Folder": "ChooseDestination.feature",
-        "Total": 2,
-        "Passing": 2,
+        "Total": 3,
+        "Passing": 3,
         "Failing": 0,
         "Inconclusive": 0
       },
@@ -391,8 +440,8 @@ jsonPWrapper ({
       }
     ],
     "Scenarios": {
-      "Total": 5,
-      "Passing": 5,
+      "Total": 6,
+      "Passing": 6,
       "Failing": 0,
       "Inconclusive": 0
     },
@@ -406,6 +455,6 @@ jsonPWrapper ({
   "Configuration": {
     "SutName": "CtTravel",
     "SutVersion": "1.0",
-    "GeneratedOn": "7 August 2018 17:12:12"
+    "GeneratedOn": "8 August 2018 10:02:50"
   }
 });

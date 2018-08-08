@@ -3,12 +3,12 @@
 	As a Leisure Travel
 	I want to Choose Destination
 
-@mytag
+@sanity
 Scenario: Count Destination
 	Given I am on HomePage
 	And  I have  ChooseyourDestination
 	When I click on ChooseyourDestination 
-	Then  I should see '38' Destination
+	Then  I should see '39' Destination
 
 Scenario: Options  Destination
 	Given I am on HomePage

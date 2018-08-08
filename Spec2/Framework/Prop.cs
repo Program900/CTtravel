@@ -27,11 +27,7 @@ namespace Spec2.Framework
             return null;
         }
 
-        internal static UserData GetUserType(object userType)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         public static SettingsData Settings(String property)
         {
             var userExcel = new ExcelMapper(@"C:\Users\rache\source\repos\Spec2\Spec2\Data.xls").Fetch<SettingsData>("Settings");

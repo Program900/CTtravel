@@ -35,7 +35,7 @@ namespace Spec2.Properties
         public static void InitializeReport()
         {
 
-            var htmlReporter = new ExtentHtmlReporter(@"C: \Users\rache\source\repos\Spec2\Spec2\ExtentReport.html");
+            var htmlReporter = new ExtentHtmlReporter(@"C:\Users\rache\source\repos\TravelCS\Spec2\Results\ExtentReport.html");
             htmlReporter.Configuration().Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
             extent = new ExtentReports();
             extent.AttachReporter(htmlReporter);

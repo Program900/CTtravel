@@ -1,0 +1,256 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "ChooseDestination",
+    "tags": [],
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Options  Destination",
+        "line": 13,
+        "type": "scenario",
+        "tags": [],
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "I am on HomePage",
+            "line": 14,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I have  ChooseyourDestination",
+            "line": 15,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "I click on ChooseyourDestination",
+            "line": 16,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "I should see OptionsOfDestinationCollection",
+            "line": 17,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Choose Destination",
+        "line": 19,
+        "type": "scenario",
+        "tags": [],
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "I am on HomePage",
+            "line": 20,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I have  ChooseyourDestination",
+            "line": 21,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "I click on ChooseyourDestination",
+            "line": 22,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I select any ChooseyourDestination",
+            "line": 23,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "I should see selected ChooseyourDestination",
+            "line": 24,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "ChooseYourHoliday",
+    "tags": [],
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Scenario Outline",
+        "name": "select  Holiday Collection",
+        "line": 12,
+        "type": "scenario_outline",
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "I am on HolidayCollections",
+            "line": 13,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I have ChooseAHolidayCollection",
+            "line": 14,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "I click on ChooseHolidayCollection",
+            "line": 15,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I click on '<Holiday>'",
+            "line": 16,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Count Holiday Collection",
+        "line": 31,
+        "type": "scenario",
+        "tags": [],
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "I am on HolidayCollections",
+            "line": 32,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I have ChooseAHolidayCollection",
+            "line": 33,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "I click on ChooseHolidayCollection",
+            "line": 34,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "I should see '10' HolidayCollection",
+            "line": 35,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Options of Holiday Collection",
+        "line": 37,
+        "type": "scenario",
+        "tags": [],
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "I am on HolidayCollections",
+            "line": 38,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I have ChooseAHolidayCollection",
+            "line": 39,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "I click on ChooseHolidayCollection",
+            "line": 40,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "I should see OptionsofHolidayCollection",
+            "line": 41,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
